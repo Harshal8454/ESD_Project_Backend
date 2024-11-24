@@ -1,4 +1,4 @@
 package com.harshal.placements.Repository;
 
-public class PlacementFilterRepository {
+public interface PlacementFilterRepository {
 }
