@@ -1,4 +1,7 @@
 package com.harshal.placements.Repository;
 
-public interface DepartmentRepository {
+import com.harshal.placements.Model.Department;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DepartmentRepository extends JpaRepository<Department, Integer> {
 }

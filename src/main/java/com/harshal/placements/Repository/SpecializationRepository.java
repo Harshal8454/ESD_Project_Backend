@@ -1,4 +1,8 @@
 package com.harshal.placements.Repository;
 
-public interface SpecializationRepository {
+import com.harshal.placements.Model.Specialization;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SpecializationRepository extends JpaRepository<Specialization, Integer> {
 }
+

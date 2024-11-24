@@ -1,4 +1,7 @@
 package com.harshal.placements.Repository;
 
-public interface PlacementRepository {
+import com.harshal.placements.Model.Placement;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PlacementRepository extends JpaRepository<Placement, Integer> {
 }
