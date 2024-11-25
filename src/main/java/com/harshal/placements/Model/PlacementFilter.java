@@ -18,7 +18,7 @@ public class PlacementFilter {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id;
 
-    @OneToOne  // Use @OneToOne instead of @ManyToOne
+    @ManyToOne  // Use @OneToOne instead of @ManyToOne
     @JoinColumn(name = "placement_id", referencedColumnName = "id")  // Specify referenced column in Placement
     private Placement placement;
 
