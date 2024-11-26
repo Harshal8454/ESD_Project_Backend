@@ -20,7 +20,6 @@ public class Specialization {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int specialization_id;
 
-
     private String code;
     private String name;
     private String description;

@@ -7,13 +7,9 @@ import com.harshal.placements.DTO.SpecializationResponse;
 import com.harshal.placements.Encryption.EncryptionService;
 import com.harshal.placements.Model.*;
 import com.harshal.placements.Repository.*;
-import com.harshal.placements.helper.JWTHelper;
+import com.harshal.placements.Helper.JWTHelper;
 import jakarta.transaction.Transactional;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-//import org.springframework.security.core.Authentication;
-//import org.springframework.security.authentication.AuthenticationManager;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -21,7 +17,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -137,22 +132,5 @@ public class OfferService {
         }
         return jwtHelper.generateToken(request.username());
     }
-//    @Autowired
-//    AuthenticationManager authManager;
-//
-//    @Autowired
-//    JWTService jwtService;
 
-//    @Autowired
-//    EmployeeRepository employeeRepository;
-
-//    public String verify(Employee employee) {
-//
-//        Authentication authentication = authManager.authenticate(new UsernamePasswordAuthenticationToken(employee.getUsername(), employee.getPassword()));
-//        if (authentication.isAuthenticated()) {
-//            return jwtService.generateToken(employee.getUsername())  ;
-//        } else {
-//            return "fail";
-//        }
-//    }
 }

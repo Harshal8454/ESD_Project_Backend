@@ -1,4 +1,4 @@
-package com.harshal.placements.helper;
+package com.harshal.placements.Helper;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

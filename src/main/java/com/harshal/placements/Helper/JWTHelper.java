@@ -1,4 +1,4 @@
-package com.harshal.placements.helper;
+package com.harshal.placements.Helper;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
